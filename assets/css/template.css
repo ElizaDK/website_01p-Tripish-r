@@ -1,0 +1,468 @@
+:root{
+    --font-primary:'Birthstone', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;/*regra de espaço dos artigos para "quebrar" quando preciso */
+}
+
+
+
+
+/*
+* SECTION - padronizacao de titulos
+*/
+.widget-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-title-text{
+    color: rgb(64, 126, 64);
+    font-size: 20px;
+    font-weight: 400;
+}
+.widget-title-bar{
+    width: 50px;
+    height: 3px;
+    background-color:  rgb(64, 126, 64);
+    margin-top: 10px;
+}
+/*
+* SECTION - end padronizacao de titulos
+*/
+
+
+
+
+
+/*
+* HEADER - LOGO - MENU
+*/
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+.logo .icon{
+    font-size: 25px;
+    color: rgb(83, 119, 10);
+    
+}
+.logo span{
+    font-size: 45px;
+    color: yellowgreen;
+    margin-left: 20px;
+    font-family: var(--font-primary);
+}
+.menu{
+    
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+nav ul,
+ nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    display: flex;
+}
+nav a{
+    display: block;
+    font-size: 28px;
+    text-decoration: none;
+    padding: 15px;/*espaço*/
+    color: teal;
+    font-family: var(--font-primary);
+
+}
+nav .active a,
+nav a:hover{
+    background-color: rgb(83, 119, 10);
+    color: #fff;
+}
+
+
+
+
+
+/*
+* SECTION - BANNER - 
+*/
+
+#banner{
+    background-image: url(../img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 120px);/*-120px do header*/
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+/*
+* BANNER - head-line
+*/
+.banner-headline{
+    flex: 1;/*altura variavel de acordo com o dispositivo*/
+    display: flex; /*aciona o flex para colocar em column*/
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-headline h1{
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    text-shadow:0px 3x 0px rgb(17, 92, 33);
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+.banner-headline h2{
+    font-size: 40px;
+    color: rgb(17, 92, 33);
+    text-shadow: 0px 2x 0px rgb(7, 7, 7);
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    margin-top: 20px;
+}
+/*
+* BANNER - options
+*/
+.banner-options{
+    height: 210px; /*altura fixa*/
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.banner-1, .banner-2,.banner-3{
+    flex: 1; /*tamanho de cada banner*/
+    padding: 20px;
+}  
+.banner-1{
+    background-color: rgb(64, 126, 64);
+}
+.banner-2{
+    background-color: rgb(85, 173, 85);
+}
+.banner-3{
+    background-color:rgb(117, 180, 117);
+    
+}
+.banner-3 .banner-wrap{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.banner-title-1{
+    margin-top: 3px;
+}
+.banner-title{
+    font-size: 22px;
+}
+.banner-descrition{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-options a {
+    display: block; /*ele acompanha o tamanho do texto*/
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+.banner-options a:hover {
+    display: block; /*ele acompanha o tamanho do texto*/
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 16px;
+    color: rgb(12, 12, 12);
+}
+.banner-data{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+/*
+* SECTION - GERAL
+*/
+article{
+    flex: 1; /*definindo um tamanho para os artigos*/
+    min-width: 300px;/*definir tamanho menino para cada artigo*/
+    margin-right: 20px;
+}
+#geral{
+    display: flex;
+    justify-content: center;
+    
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+
+article .news-data{
+    display: flex;
+    
+}
+article .news-posted{
+    background-color: rgb(64, 126, 64);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 2px;
+    border-radius: 5px;
+
+}
+article .news-icon{
+    background-color: rgb(101, 184, 101);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 2px;
+    border-radius: 5px;
+}
+
+#geral .widget-body a{
+    text-decoration: none;
+    list-style: none;
+}
+article .news-thumbnail{
+    margin-top: 30px;
+}
+article .news-thumbnail img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+article .news-title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: rgb(85, 76, 76);
+}
+article .news-resume{
+    font-size: 14px;
+    color: rgb(85, 76, 76);
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+/*
+* SECTION - ASIDE
+*/
+#geral .widget-body-filme a{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    padding-left: 10px;
+}
+#geral .widget-body-filme ul{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 10px;
+    line-height: 25px;
+}
+#geral .widget-body-filme a:hover{
+    color: rgb(64, 126, 64);
+}
+aside .widget-body-hostel{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+aside .news-thumbnail img{
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+aside .news-title{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+aside .widget-wrap{
+    margin: 20px;
+}
+
+
+/*
+* FOOTER
+*/
+
+footer{
+    background-color: #1e1e1e;
+    color: #fff;
+    /*mesmo com a classe container precisa do display:flex e js-cont :center*/
+    display: flex; 
+    justify-content: center;
+
+}
+.footer-menu{
+    display: flex;
+    /*flex: 1;defini o tamanho de cada fm-1*/
+}
+.fm-1, .fm-2,.fm-3{
+    flex: 1;
+    color: #fff;
+    padding:20px;
+    font-size: 18px;
+}
+.fm-1:hover, .fm-2:hover,.fm-3:hover{
+    color: yellow;
+}
+.fm-1{
+    background-color: rgb(64, 126, 64);
+}
+.fm-2{
+    background-color: rgb(85, 173, 85);
+}
+.fm-3{
+    background-color:rgb(117, 180, 117);
+}
+/*para ambos os footer ficarem em coluna*/
+
+.flexColumn{
+    flex-direction: column;
+}
+.footer-area{
+    display: flex;
+    color: #fff;
+}
+.footer-area-item{ /* defini o tamanho de cada */
+    flex: 1;
+}
+.footer-area-item .widget-title-text{ /* defini o tamanho de cada */
+    color: #fff;
+    font-size: 15px;
+}
+
+.footer-copy{
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/*
+* MENU MOBILE - SANDUICHE
+*/
+/*para ficar escondido na versao pc responsividade*/
+.menu-mobile{ 
+    display: none;
+    width: 40px;
+    height: 40px;
+    
+    /*para permanecer a mesma altura do header de 120px, colocamos 80px top e 40px bottom*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm-line{
+    height: 3px;
+    background-color:rgb(64, 126, 64);
+}
+
+
+/*
+* RESPONSIVIDADE
+*/
+
+@media (max-width:600px){
+    .banner-headline h1{
+        font-size: 35px;
+        padding: 10px 20px;
+        color: #2c2c2c;
+    }
+    .banner-headline h2{
+        font-size: 27px;
+        padding: 5px 20px;
+    }
+    .banner-options{
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+     }
+     #geral section, #geral aside{
+         margin: 20px;
+     }
+     .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy {
+        padding-left: 20px;
+    }
+
+    /* configuração menu sanduiche*/
+
+    header .container{
+        flex-direction: row;
+    }
+    nav ul{
+        flex-direction: column;
+       /* display: none;*/
+        position: absolute; 
+        left: 0; /*comecar do lado esquerdo*/
+        width: 100%;/*se adequar ao tamanho da tela*/
+        background-color: #fff;
+    }
+    header {
+        height: auto;
+    }
+    .logo{
+        padding-left: 20px;
+    }
+    .menu-mobile{
+        display: flex; /*para aparecer na responsividade e as linhas ficarem em collumn*/
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+
