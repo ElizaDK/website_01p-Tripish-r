@@ -465,4 +465,8 @@ footer{
     }
 }
 
-
+@media (max-width:600px){
+.widget-title-text {
+    padding-top: 53px;
+    }
+}
