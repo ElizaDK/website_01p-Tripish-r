@@ -116,7 +116,7 @@ nav a:hover{
     background-image: url(../img/bg1.jpg);
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 120px);/*-120px do header*/
+    height: 100vh; /*calc(100vh - 120px);/*-120px do header*/
     display: flex;
     justify-content: center;
 }
@@ -135,7 +135,7 @@ nav a:hover{
     flex-direction: column;
 }
 .banner-headline h1{
-    font-size: 52px;
+    font-size: 48px;
     color: rgb(255, 255, 255);
     text-shadow:0px 3x 0px rgb(17, 92, 33);
     margin: 0;
@@ -143,7 +143,7 @@ nav a:hover{
     max-width: 400px;
 }
 .banner-headline h2{
-    font-size: 40px;
+    font-size: 38px;
     color: rgb(17, 92, 33);
     text-shadow: 0px 2x 0px rgb(7, 7, 7);
     margin: 0;
@@ -216,7 +216,7 @@ nav a:hover{
 */
 article{
     flex: 1; /*definindo um tamanho para os artigos*/
-    min-width: 300px;/*definir tamanho menino para cada artigo*/
+    min-width: 300px;/*definir tamanho minino para cada artigo*/
     margin-right: 20px;
 }
 #geral{
@@ -467,23 +467,33 @@ footer{
 
 @media (max-width:600px){
     
-    .widget-title-text {
-    padding-top: 60px;
+    .widget {
+    padding-top: 70px;
     }
-    .widget-title {
-        margin-top: 80px;
-       
+    .banner{
+        margin-bottom: 50px;
+    }
+    .banner .banner-3{
+        margin-bottom: 50px;
+    }
+    .widget-title-text{
+        margin-bottom: 50px;
     }
 }
 
 
 @media (max-width:800px){
     
-    .widget-title-text {
-    padding-top: 60px;
+    .widget{
+    padding-top: 20px;
     }
-    .widget-title {
-        margin-top: 80px;
-       
+    .banner{
+        margin-bottom: 50px;
+    }
+    .banner .banner-3{
+        margin-bottom: 50px;
+    }
+    .widget-title-text{
+        margin-bottom: 30px;
     }
 }
